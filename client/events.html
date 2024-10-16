@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="w-full h-20 flex px-6 justify-between items-center mt-2 sm:mt-8">
+        <div class="logo flex-shrink-0">
+            <img src="https://framerusercontent.com/images/FQbf6D7JJVETheQwkQozlAjQUU.png" alt="Logo"
+                class="w-72 md:w-72 h-auto">
+        </div>
+        <div class="nav-links hidden md:flex">
+            <ul class="flex space-x-6 lg:space-x-12 font-medium items-center">
+                <a href="index.html" class="text-blue-500 text-base md:text-lg cursor-pointer">Home</a>
+                <li class="text-base md:text-lg cursor-pointer">Upcoming Events</li>
+                <li class="text-base md:text-lg cursor-pointer">Info</li>
+                <li class="text-base md:text-lg cursor-pointer">About us</li>
+                <li class="text-blue-500 text-base md:text-lg cursor-pointer">Blog</li>
+                <div class="flex items-center">
+                    <a href="/location.html"
+                        class="inline-flex items-center px-4 py-2 md:px-6 md:py-2 bg-purple-300 hover:bg-purple-400 text-base md:text-lg font-semibold text-gray-900 rounded-full transition">
+                        Get Started
+                    
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-transparent rounded-full transition">
+                        <svg class="w-6 md:w-8 h-6 md:h-8 transform rotate-45 arrow-animation" fill="none"
+                            stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18V6m-6 6l6-6 6 6"></path>
+                        </svg>
+                    </span>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <!-- Hamburger Menu for smaller screens -->
+        <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <!-- Hamburger Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu"
+            class="absolute top-20 left-0 w-full bg-white shadow-md md:hidden hidden transition-all duration-300">
+            <ul class="flex flex-col items-center space-y-4 p-4">
+                <li class="text-blue-400 text-lg cursor-pointer">Home</li>
+                <li class="text-lg cursor-pointer">Upcoming Events</li>
+                <li class="text-lg cursor-pointer">Info</li>
+                <li class="text-lg cursor-pointer">About us</li>
+                <li class="text-blue-400 text-lg cursor-pointer">Blog</li>
+                <button
+                    class="bg-purple-400 px-6 py-2 font-semibold rounded-full shadow-lg hover:bg-purple-500 transition duration-300">
+                    Get Started
+                </button>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="text-6xl text-center mb-2 mt-8 text-bg-gray-800">Upcoming <span class="text-blue-600">Events</span></h2>
+    <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-7">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="https://www.snuxplore.com/build/_assets/NavigationMadeEasyCardImg-2BK4QWJM.svg" alt="Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">Navigation Made Easy</h3>
+                <p class="text-gray-600 mb-4">
+                    Find detailed information on all buildings and locations on campus. Locate the Dargaah, call your warden. All of it is here, just for you.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="https://via.placeholder.com/400x200" alt="Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">SNU GPT: Your AI Guide</h3>
+                <p class="text-gray-600 mb-4">
+                    Find detailed information on all buildings and locations on campus. Locate the Dargaah, call your warden. All of it is here, just for you.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="https://via.placeholder.com/400x200" alt="Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">Admin Info</h3>
+                <p class="text-gray-600 mb-4">
+                    Find detailed information on all buildings and locations on campus. Locate the Dargaah, call your warden. All of it is here, just for you.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="https://via.placeholder.com/400x200" alt="Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">SNU GPT: Your AI Guide</h3>
+                <p class="text-gray-600 mb-4">
+                    Find detailed information on all buildings and locations on campus. Locate the Dargaah, call your warden. All of it is here, just for you.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="https://via.placeholder.com/400x200" alt="Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2">Admin Info</h3>
+                <p class="text-gray-600 mb-4">
+                    Find detailed information on all buildings and locations on campus. Locate the Dargaah, call your warden. All of it is here, just for you.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

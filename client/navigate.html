@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigate Campus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans h-screen overflow-hidden">
+    <div class="flex h-full">
+        <!-- Left Slider -->
+        <div class="w-full sm:w-1/3 h-full bg-gray-50 p-6 shadow-lg overflow-y-auto">
+            <nav class="h-16 flex justify-start items-center">
+                <a href="/index.html" class="flex items-center mb-4">
+                    <span class="text-2xl font-extrabold">&larr;</span>
+                </a>
+
+                <div class="locationLogo">
+                    <img src="https://framerusercontent.com/images/FQbf6D7JJVETheQwkQozlAjQUU.png" class="w-72 h-auto" alt="">
+                </div>
+            </nav>
+
+            <!-- Full search bar (visible on large screens) -->
+            <div class="fixed search_box mb-4 sm:flex items-center border border-gray-400 rounded-[20px] w-full max-w-2xl sm:max-w-xl">
+                <a href="#" class="flex items-center w-full">
+                    <input class="flex-grow h-8 sm:h-10 px-2 sm:px-3 w-52 sm:w-64 focus:outline-none rounded-l-[20px]" type="text" placeholder="Search">
+                    <button class="flex items-center justify-center w-9 h-8 sm:w-14 sm:h-10 bg-gray-100 hover:bg-gray-200 rounded-r-[20px]">
+                        <img class="w-5 h-5 sm:w-6 sm:h-6" src="search.png" alt="Search Icon">
+                    </button>
+                </a>
+            </div>
+            <a href="">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipN3dhTi_KLRBHVk3D9nOULYxgHSUKW6wUql3mDk=w408-h306-k-no" alt="Image" class="w-full h-64 rounded-lg">
+            </a>
+            <p class="text-2xl font-semibold text-gray-800 mt-4">Netaji Subhas University of Technology</p>
+            <p class="text-sm text-gray-600 mt-1">नेताजी सुभाष प्रौद्योगिकी विश्वविद्यालय</p>
+            <div class="flex items-center text-sm mt-2 text-gray-600">
+                <span>4.4 ★ (2,093)</span>
+                <span class="ml-2">University · 🎓</span>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="flex justify-between border-b border-gray-200 mb-4">
+                <a href="#" class="text-blue-600 font-medium border-b-2 border-blue-600 px-4 py-2">Overview</a>
+            </div>
+
+            
+
+            <!-- Details Section -->
+            <div class="text-gray-700">
+                <div class="flex items-center mb-2">
+                    <svg class="w-5 h-5 text-gray-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                    </svg>
+                    Azad Hind Fauj Marg, Dwarka Sector-3, Dwarka, Delhi, 110078
+                </div>
+                <div class="flex items-center mb-2">
+                    <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h6V4"></path>
+                    </svg>
+                    <span class="text-green-600">Open</span> · Closes 6pm
+                </div>
+                <div class="flex items-center mb-2">
+                    <svg class="w-5 h-5 text-gray-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                    </svg>
+                    <a href="https://nsut.ac.in" class="text-blue-600">nsut.ac.in</a>
+                </div>
+                <div class="flex items-center mb-2">
+                    <svg class="w-5 h-5 text-gray-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                    </svg>
+                    011 2500 0268
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Right Section (Map) -->
+        <div class="hidden sm:block sm:w-2/3 h-screen fixed right-0">
+            <div class="h-full bg-gray-300 flex items-center justify-center">
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/search?q=Demo-Library-DEMO-ADDRESS-110001&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                    frameborder="0" class="w-full h-full"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
