@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nsut Orbit</title>
+    <link rel="icon" href="./assests/images/Nsut logo.png" width="100%" hight="100%"/>
     <link rel="stylesheet" href="./assests/style/style1.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -26,11 +27,12 @@
 
             <div class="nav-links hidden md:flex">
                 <ul class="flex space-x-6 lg:space-x-12 font-medium items-center">
-                    <li class="nav-item"><a href="index.html"
-                            class="text-base md:text-lg cursor-pointer">Home</a></li>
-                    <li class="nav-item"><a href="/events.html" class="text-base md:text-lg cursor-pointer">Upcoming Events</a></li>
+                    <li class="nav-item">
+                        <a href="#home" class="text-base md:text-lg cursor-pointer">Home</a>
+                    </li>
+                    <li class="nav-item"><a href="#events" class="text-base md:text-lg cursor-pointer">Upcoming Events</a></li>
                     <div class="flex items-center">
-                        <a href="/location.html"
+                        <a href=""
                             class="inline-flex items-center px-4 py-2 md:px-6 md:py-2 bg-purple-300 hover:bg-purple-400 text-base md:text-lg font-semibold text-gray-900 rounded-full transition nav-item-button">
                             Get Started
                             <span
@@ -58,18 +60,17 @@
             <div id="mobile-menu"
                 class="absolute top-20 left-0 w-full bg-white shadow-md md:hidden hidden transition-all duration-300">
                 <ul class="flex flex-col items-center space-y-4 p-4">
-                    <li class="text-lg cursor-pointer">Home</li>
-                    <li class="text-lg cursor-pointer">Upcoming Events</li>
-                    <button
-                        class="bg-purple-400 px-6 py-2 font-semibold rounded-full shadow-lg hover:bg-purple-500 transition duration-300">Get
-                        Started</button>
+                    <a href="#home"><li class="text-lg cursor-pointer">Home</li></a>
+                    <a href="#events"><li class="text-lg cursor-pointer" href>Upcoming Events</li></a>
+                    <a href=""><button class="bg-purple-400 px-6 py-2 font-semibold rounded-full shadow-lg hover:bg-purple-500 transition duration-300">Get Started</button></a>
                 </ul>
             </div>
         </nav>
 
 
         <section
-            class="flex flex-col md:flex-row justify-center items-center md:space-x-12 lg:space-x-48 md:p-6 mt-6 sm:mt-14 space-y-8 md:space-y-0">
+            class="flex flex-col md:flex-row justify-center items-center md:space-x-12 lg:space-x-48 md:p-6 mt-6 sm:mt-14 space-y-8 md:space-y-0"
+            id="home">
             <div class="max-w-lg px-4 md:px-0">
                 <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold mb-4 md:mb-6 animate-text">Lorem ipsum dolor
                     sit amet consectetur elit</h2>
@@ -81,25 +82,11 @@
             <div class="relative mt-10 md:mt-0">
                 <img class="rounded-3xl shadow-lg w-full md:max-w-lg h-64 md:h-96 object-cover"
                     src="https://framerusercontent.com/images/FijNKo6ebaKOYQMLIFYiuTdmg.jpg?scale-down-to=512"
-                    alt="Campus image">
-                <div class="absolute top-2 right-2 bg-transparent rounded-lg p-2 shadow-md">
-                    <a href="#"
-                        class="inline-flex bg-purple-300 hover:bg-purple-400 items-center font-semibold rounded-full px-4 py-2 text-black">
-                        +3K Listings
-                        <span
-                            class="inline-flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-transparent rounded-full transition">
-                            <svg class="w-6 md:w-8 h-6 md:h-8 transform rotate-45 arrow-animation" fill="none"
-                                stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18V6m-6 6l6-6 6 6"></path>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
+                    alt="Nsut Campus image">
             </div>
         </section>
 
-        <h1 class="text-6xl sm:ml-16 text-center sm:text-start mb-1 mt-10 text-bg-gray-800">Events</h1>
+        <h1 class="text-6xl sm:ml-16 text-center sm:text-start mb-1 mt-10 text-bg-gray-800" id="events">Events</h1>
         <section class="max-w-7xl mx-2 sm:mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-7">
             <!-- Card 1 -->
             <div
@@ -239,27 +226,6 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        // Select the logo container
-        const logoContainer = document.querySelector('.logo-container');
-
-        // Add an event listener for the animationend event
-        logoContainer.addEventListener('animationend', (event) => {
-            // Check if the animation that ended is the moveUp animation
-            if (event.animationName === 'moveUp') {
-                // Hide the logo container after the animation completes
-                logoContainer.style.display = 'none';
-            }
-        });
-    </script>
 </body>
 
 </html>
