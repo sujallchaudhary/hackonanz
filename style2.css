@@ -1,8 +1,0 @@
-.infobox{
-    display:flex;
-    flex-direction: column;
-}
-
-.connection{
-    margin-bottom: 8px;
-}
