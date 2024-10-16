@@ -72,7 +72,7 @@
             class="flex flex-col md:flex-row justify-center items-center md:space-x-12 lg:space-x-48 md:p-6 mt-6 sm:mt-14 space-y-8 md:space-y-0"
             id="home">
             <div class="max-w-lg px-4 md:px-0">
-                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold mb-4 md:mb-6 animate-text">What is Nsut orbit ?</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-6 animate-text">What is Nsut orbit ?</h2>
                 <p class="mb-6 md:mb-8 text-gray-600 text-base md:text-lg animate-text">
                     Welcome to our all-in-one digital platform designed to enhance student life! Our web app simplifies campus engagement by offering seamless event management, attendance tracking, and resource booking. Whether you're organizing activities or connecting with peers, our platform helps you make the most of your college experience by fostering collaboration and community</p>
             </div>
@@ -85,7 +85,7 @@
         </section>
 
         <h1 class="text-6xl sm:ml-16 text-center sm:text-start mb-1 mt-10 text-bg-gray-800" id="events">Events</h1>
-        <section class="max-w-7xl mx-2 sm:mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-7">
+        <section class="max-w-7xl px-8 mx-2 sm:mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-7">
             <!-- Card 1 -->
             <div
                 class="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl ">
@@ -149,6 +149,6 @@
             </div>
         </footer>
     </div>
+    <script src="./script.js" charset="utf-8"></script>
 </body>
-
 </html>
