@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    /* Ensure no margin around body */
+    padding: 0;
+    /* Ensure no padding around body */
+}
+
+.logo-container {
+    position: fixed;
+    /* Use fixed position to center the logo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the logo */
+    z-index: 10;
+    /* Ensure the logo is above other content */
+}
+
+.logo-animation {
+    animation: bounce 2s forwards, moveUp 1s forwards 1s;
+    /* Bounce first, then move up */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        /* Start from the center */
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        /* Scale up */
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        /* Scale back to original size */
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        /* Start with no rotation */
+    }
+
+    100% {
+        transform: translate(-50%, -150vh) rotate(420deg);
+        /* Move out of view and rotate */
+    }
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 1.5s;
+    /* Start content fade in after logo moves up */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional styling for animations */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for nav items */
+.nav-item {
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s forwards;
+}
+
+.nav-item:nth-child(1) {
+    animation-delay: 1.5s;
+    /* Start after logo animation */
+}
+
+.nav-item:nth-child(2) {
+    animation-delay: 1.7s;
+}
+
+.nav-item:nth-child(3) {
+    animation-delay: 1.9s;
+}
+
+.nav-item:nth-child(4) {
+    animation-delay: 2.1s;
+}
+
+.nav-item:nth-child(5) {
+    animation-delay: 2.3s;
+}
+
+.nav-item-button {
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s forwards;
+    animation-delay: 2.5s;
+    /* Slightly delayed for the button */
+}
+
+/* CSS for Logo Animation */
+.navbar-logo {
+    animation: bounceRotate 1.5s ease-out forwards;
+}
+
+@keyframes bounceRotate {
+    0% {
+        transform: translateY(-100%) rotate(0deg) scale(0.8);
+        /* Start from above */
+        opacity: 0;
+        /* Invisible at the start */
+    }
+
+    50% {
+        transform: translateY(0) rotate(180deg) scale(1.1);
+        /* Bounce to original position */
+        opacity: 1;
+        /* Fully visible */
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg) scale(1);
+        /* End at original position */
+        opacity: 1;
+        /* Fully visible */
+    }
+}
