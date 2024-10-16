@@ -45,7 +45,7 @@ body {
     }
 
     100% {
-        transform: translate(-50%, -150vh) rotate(420deg);
+        transform: translate(-50%, -150vh) rotate(0deg);
         /* Move out of view and rotate */
     }
 }
