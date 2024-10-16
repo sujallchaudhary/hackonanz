@@ -32,7 +32,7 @@
                     </li>
                     <li class="nav-item"><a href="#events" class="text-base md:text-lg cursor-pointer">Upcoming Events</a></li>
                     <div class="flex items-center">
-                        <a href=""
+                        <a href="#"
                             class="inline-flex items-center px-4 py-2 md:px-6 md:py-2 bg-purple-300 hover:bg-purple-400 text-base md:text-lg font-semibold text-gray-900 rounded-full transition nav-item-button">
                             Get Started
                             <span
@@ -62,7 +62,7 @@
                 <ul class="flex flex-col items-center space-y-4 p-4">
                     <a href="#home"><li class="text-lg cursor-pointer">Home</li></a>
                     <a href="#events"><li class="text-lg cursor-pointer" href>Upcoming Events</li></a>
-                    <a href=""><button class="bg-purple-400 px-6 py-2 font-semibold rounded-full shadow-lg hover:bg-purple-500 transition duration-300">Get Started</button></a>
+                    <a href="#"><button class="bg-purple-400 px-6 py-2 font-semibold rounded-full shadow-lg hover:bg-purple-500 transition duration-300">Get Started</button></a>
                 </ul>
             </div>
         </nav>
@@ -74,7 +74,7 @@
             <div class="max-w-lg px-4 md:px-0">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-6 animate-text">What is NSUT Orbit ?</h2>
                 <p class="mb-6 md:mb-8 text-gray-600 text-base md:text-lg animate-text">
-                    Welcome to our all-in-one digital platform designed to enhance student life! Our web app simplifies campus engagement by offering seamless event management, attendance tracking, and resource booking. Whether you're organizing activities or connecting with peers, our platform helps you make the most of your college experience by fostering collaboration and community</p>
+                    Welcome to our all-in-one digital platform designed to enhance student life! Our web app simplifies campus engagement by offering seamless event management and resource booking. Whether you're organizing activities or connecting with peers, our platform helps you make the most of your college experience by fostering collaboration and community</p>
             </div>
 
             <div class="relative mt-10 md:mt-0">
